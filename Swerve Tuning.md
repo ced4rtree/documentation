@@ -1,4 +1,4 @@
-Swerve wheels consist of two parts: the **azimuth** controls where the wheel points, while the **drive** actually runs the wheels. Both parts need to be well-tuned for a robot to drive well.
+Swerve wheels consist of two parts: the **azimuth** controls where the wheel points, while the **drive** actually runs the wheels. Both parts need to be well-tuned for a robot to drive well (though it's not hard to get azimuth well-tuned).
 
 ## Step 1: Put the robot on blocks
 For tuning the azimuths, the robot needs to be off the ground. Get some blocks (there's a bin with plastic blocks of various shapes somewhere in the shop that works nicely, other kinds of blocks will also work) and use them to get the robot off the ground. Make sure the wheels won't hit or grip anything when rotating + driving.
@@ -52,3 +52,13 @@ Tuning the drive motors ensures that the bot drives at the correct speed.
     5. Test that the robot still moves well with the weight removed.
 8. Finally, tune **D**.
     1. TODO figure out how to use D properly; it seems to just make the wheels jitter when I try to use it. (For future refrence I started it at 1/100th and it instantly caused jitter.)
+9. Remeber to save P/D/S/V values to code.
+
+## Step 4: Azimuth Tuning
+The azimuth motors are usually just so overpowered that it's very easy to get it very close. If the azimuths don't appear to be poorly tuned, you probably don't need to retune them.
+
+1. Go back into that `SwerveTuningTest` test and hit Back/Select to swap to azimuth mode.
+2. Replace the P/D/S/V values with the ones currently in code for the azimuths. (which probably just has P set.)
+3. If the azimuths aren't turning very fast, increase P. If they're going crazy, decrease P.
+4. Repeat until it gets to its setpoint fairly quickly (say, under 0.3s)
+5. Remeber to save P/D/S/V values to code.
