@@ -6,9 +6,8 @@
 ```
 
 # Step 0: Login
-1. Boot up the laptop.
-2. Log in with the PIN of 2122.
-3. Connect to a mobile hotspot.
+1. Log in to the laptop with the PIN of 2122.
+2. Connect to a mobile hotspot.
 
 # Step 1: Open the Robot Project
 1. Open the "{this year} WPILib VS Code" (e.g. 2024 WPILib VS Code)
