@@ -51,7 +51,8 @@ If the button isn't present, open the Command Palette with `Ctrl`+`Shift`+`P`.
       - Anything else: Hopefully the message is helpful?
 
 ## Step 5: Drive
-```java
-// TODO
-```
-
+1. Open the *FRC Driver Station* app.
+2. Verify that the robot is connected and has code loaded ("Communications" and "Robot Code" should both have fully green boxes next to them)
+3. Switch to the Devices tab (on the left, USB icon) and make sure that your driver controller appears on slot 0 (pressing buttons should make it light up), and your gunner controller (if any) on slot 1. If not, drag and drop to reorder.
+4. Make sure you can easily hit Enter (disable) or Space (E-stop) if needed. (If you E-Stop, you'll need to redeploy the robot code.)
+5. Switch back to the Operation tab (steering wheel icon), select TeleOperated mode, and press Enable to start the robot.
