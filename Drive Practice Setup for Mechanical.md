@@ -39,8 +39,8 @@
 
 ## Step 4: Deploy
 1. Find the WPILib \<W> near the upper right and click it:  
-<img src="images/VSCode-WPILibWButton.png" style="max-height: 6em">  
-If the button isn't present, open the Command Palette with `Ctrl`+`Shift`+`P`.
+   <img src="images/VSCode-WPILibWButton.png" style="max-height: 6em">  
+   If the button isn't present, open the Command Palette with `Ctrl`+`Shift`+`P`.
 2. Find the "WPILib: Deploy Robot Code" option (if you opened the command palette, you can type in "wpilib" and it should show up) and click it.
 3. If it asks you to "Pick a language", choose Java.
 4. Wait for it to deploy, and check the output:
