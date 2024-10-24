@@ -12,7 +12,7 @@
 # Step 1: Open the Robot Project
 1. Open the "{this year} WPILib VS Code" (e.g. 2024 WPILib VS Code)
 2. Check the top of the window:  
-  [screenshot of said top of window]  
+  <img src="images/VSCode-TopBarProjectName.png" style="max-height: 3em">  
   If it has the [name of the robot you're working with](Robot%20Names.md), great. Otherwise, check File > Open Recent for the repo, else File > Open Folder and open whichever one of these paths exists:
     - `C:\Code\<robot name here>`
     - `C:\Users\senti\Code\<robot name here>`
@@ -20,7 +20,8 @@
   If none exist, it may not be on that laptop. Check the other one.
 
 # Step 2: Fetch
-[image of a terminal]
+<img src="images/VSCode-Terminal.png" style="max-height: 11em">
+
 1. Once you have the correct robot code open, press `Ctrl`+`Shift`+<code>\`</code> to open a terminal.
 2. Type `git fetch` into the terminal (at the bottom) and press Enter.
 3. Check the output:
