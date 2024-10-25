@@ -22,11 +22,11 @@ After the temporary diagnostic server is running, do the following for each whee
 8. Enable the robot in Test mode.
 9. Click the DISABLED button to enable Phoenix control and run the wheel. If the wheel would push the robot forward (it would push the ground backwards), great! Disable the motor control and skip this step. If not:
     1. Disable motor control, then go back to the Cancoder and go to the Config tab.
-    2. If the magnet offset is negative, add 0.5, else subtract 0.5. Flash the config.'
+    2. If the magnet offset is negative, add 0.5, else subtract 0.5. Flash the config.
 10. Make sure to save the magnet offset in code if it's saved there.
 11. Swerve wheels are generally not perfectly symmetrical. Check for something that's on one side of the wheel only, and use that information to get the wheel angle right the first time for the rest of the wheels.
 
-After tuning all the azimuths, verify by going either into Manual Tests and using the `SwerveTuningTest`` to drive the wheels, or going into Teleop and just driving in that mode.
+After tuning all the azimuths, verify by going either into Manual Tests and using the `SwerveTuningTest` to drive the wheels, or going into Teleop and just driving in that mode.
 
 ## Step 3: Drive Motor Tuning
 Tuning the drive motors ensures that the bot drives at the correct speed.
