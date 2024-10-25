@@ -19,6 +19,8 @@
     - `C:\Users\<other users>\Code\<robot name here>`  
   If none exist, it may not be on that laptop. Check the other one.
 
+<div style="page-break-after: always"></div>  
+
 # Step 2: Fetch
 <img src="images/VSCode-Terminal.png" style="max-height: 11em">
 
@@ -37,6 +39,8 @@
    - If it ends with `HEAD is now at <whatever>`, you're good. Continue to the next step.
    - If it ends with `Please commit your changes or stash them before you switch branches.`, type `git stash`, hit <kbd>Enter</kbd>, and retry the checkout.
    - If it starts with `error: you need to resolve your current index first`, type `git add .` and hit <kbd>Enter</kbd>. Then type `git stash`, hit <kbd>Enter</kbd>, complain to Programming for leaving you a merge conflict, then try the checkout again.
+
+<div style="page-break-after: always"></div>  
 
 ## Step 4: Deploy
 1. Find the WPILib \<W> near the upper right and click it:  
