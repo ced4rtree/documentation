@@ -1,4 +1,6 @@
 Repo names match bot names unless otherwise specified.
+## 2025:
+- Onseason: **Tidaltator**
 ## 2024:
 - Flatbot: **MashedPotator**
 - Onseason: **Conductator**
