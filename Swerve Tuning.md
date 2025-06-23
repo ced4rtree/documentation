@@ -34,7 +34,7 @@ Tuning the drive motors ensures that the bot drives at the correct speed.
 1. Get the bot off blocks and on the ground. The tuning will be very different if the wheels aren't pushing a bot.
 2. Make sure that the `SwerveTuningTest` manual test is available in the swerve subsystem.
 3. Go into Test mode and select the `SwerveTuningTest` test.
-4. Open up Shuffleboard or similar tool, and look under the `quick/SwerveTuning` path for [PID values](./PID%20Info.md).
+4. Open up Shuffleboard or similar tool, and look under the `quick/SwerveTuning` path for [PID values](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/introduction/index.html).
 5. First, tune **S**.
     1. Start it at a small guess value (e.g. 0.5V).
     2. Increase S if the bot doesn't move, decrease S if it does.
