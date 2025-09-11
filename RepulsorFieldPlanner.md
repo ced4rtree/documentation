@@ -92,12 +92,10 @@ To visualize the vector field you're creating, there's a function in
 `RepulsorFieldPlanner.java` called `getArrows()`, which returns an array of
 `Pose2d`s. When logged properly (this logging should only happen in simulation,
 as the computation is somewhat expensive), the array can be visualized in
-[AdvantageScope](https://docs.advantagescope.org/)'s odometry or 3D field tab.
-
-It should be noted, though, that this function only generates the vector field
-for every obstacle on the field, and does not take into account the goal
-position, which may be confusing if your goal has arrows on top of it that point
-away. This is has to do with how the final vector is actually calculated.
+[AdvantageScope](https://docs.advantagescope.org/)'s odometry or 3D field
+tab. For reasons explained below, there are three different types of vector
+fields one can draw: goal, obstacle, and sum. The `VectorField` enum can be
+passed into `getArrows` to determine which field to visualize.
 
 Another point of note is that, due to technical limitations in
 [AdvantageScope](https://docs.advantagescope.org/), the strength of vectors
