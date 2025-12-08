@@ -1,14 +1,6 @@
-# Repulsor Field Planner or: Obstacle Avoidance via Vector Field
+title: Repulsor Field Planner
 
-## Table of Contents
-- [Introduction](#introduction)
-- [What is `RepulsorFieldPlanner.java`?](#what-is-repulsorfieldplannerjava)
-- [How Does `RepulsorFieldPlanner.java` Work?](#how-does-repulsorfieldplannerjava-work)
-  - [Intro to Vector Fields](#intro-to-vector-fields)
-  - [Visualization](#visualization)
-  - [Final Algorithm](#final-algorithm)
-- [How Do I Use `RepulsorFieldPlanner.java`?](#how-do-i-use-repulsorfieldplannerjava)
-- [Adapting From Year to Year](#adapting-from-year-to-year)
+# Repulsor Field Planner or: Obstacle Avoidance via Vector Field
 
 ## Introduction
 `RepulsorFieldPlanner.java` is a file used in the codebase of a robot that
@@ -76,12 +68,12 @@ direction of your movement, and see how it matches up with the length and
 direction of the arrows near your finger. This is the same way the robot follows
 the vector fields defined in `RepulsorFieldPlanner.java`.
 
-<img src="images/hurricane-vector.gif" title="A hurricane with a changing vector field drawn on top of it">
+<img src="../../images/hurricane-vector.gif" title="A hurricane with a changing vector field drawn on top of it">
 
 Keep in mind that, although vector fields are often visualized with grids of
 arrows whose positions are fixed, a vector field is typically a
 <ins>continuous</ins> function, and the grid of arrows is simply an easy way to
-visualize a function $`\vec{F}(x, y)`$, where $`\vec{F}`$ is a vector with
+visualize a function $\vec{F}(x, y)$, where $\vec{F}$ is a vector with
 direction and magnitude in a two dimensional plane. The visual grid of arrows is
 not a literal definition of a vector field, but more just a helpful way to
 visualize many outputs of a continuous function.
@@ -107,17 +99,17 @@ thus has no way to configure the strength of the vector depicted by one.
 
 There are really two vector fields at play here. There is a vector field that
 points away from obstacles, and there is a vector field that points toward the
-goal. They use an inverse square ($`\vec{F} \propto \frac{1}{x^2}`$) and
-proportional strength ($`\vec{F} \propto x`$) relationship, respectively. Thus,
+goal. They use an inverse square ($\vec{F} \propto \frac{1}{x^2}$) and
+proportional strength ($\vec{F} \propto x$) relationship, respectively. Thus,
 the closer to an obstacle the robot is, the harder it will drive away, and the
 closer the robot is to the goal, the less it will drive towards it.
 
 The final vector is computed by simply adding the resultant vector from each
 field together, like so:
 
-    1. Compute the vector from field obstacle vector field
-    2. Compute the vector from goal position vector field
-    3. Add these two vectors together
+1. Compute the vector from field obstacle vector field
+2. Compute the vector from goal position vector field
+3. Add these two vectors together
     
 The final step produces a vector that both drives the robot away from obstacles
 and drives toward a goal. Step 1 is represented by the function
@@ -129,7 +121,7 @@ the code. It really is that simple.
 A few things have to happen before one can avoid obstacles. First, create a
 repulsor where you plan on using one (typically just within the drive subsystem).
 
-```java
+``` java
 RepulsorFieldPlanner repulsor = new RepulsorFieldPlanner();
 ```
 
@@ -190,7 +182,7 @@ avoidance. It wasn't that hard, right?
 
 `RepulsorFieldPlanner.java` has many different obstacle types defined in it, but
 you may need to formulate more depending on the field. For example,
-`TeardropObstacle` is a pretty unique shape (sort of like "<)", like a
+`TeardropObstacle` is a pretty unique shape (sort of like "c>", like a
 raindrop), but forces the robot to move to the sides of a circular obstacle
 should the goal be on the opposite end of the obstacle from the robot. This was
 used to model the reef in the 2025 onseason. The reef was a big hexagon, so you
