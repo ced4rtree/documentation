@@ -5,15 +5,20 @@ For tuning the azimuths, the robot needs to be off the ground. Get some blocks (
 
 ## Step 2: Align the Azimuths
 The azimuths need to be tuned such that, if the drive motors are driving in a *positive* direction and the azimuth motors are at an angle of **0**, the robot should drive forwards.  
+
 Before tuning, we want to deploy Phoenix's **temporary diagnostic server**. It will do absolutely nothing, which is great when you don't want the motors to move while you're tuning them.
+
 1. If there isn't any robot code, Phoenix will readily offer to deploy the diagnostic server in the Devices menu. Click the RUN TEMPORARY DIAGNOSTICS button.  
-<img src="images/PhoenixTunerX-RunTempDiag-DevicesMenu.png" style="height: 6em">
+
+<img src="../../images/PhoenixTunerX-RunTempDiag-DevicesMenu.png" style="height: 6em">
+
 2. If there is other robot code, or if the button otherwise dosen't show up, go to the Settings menu from the hamburger menu in the upper left.
 3. Expand the "FRC Advanced" section and click "Run Temporary Diagnostic Server".
 
 After the temporary diagnostic server is running, do the following for each wheel:
+
 1. Find the Cancoder for that wheel in Phoenix Tuner X. Make sure you've got the right one by using the Blink button.
-2. Go into the **Config** tab and set the Magnet Offset to 0. Use the "Apply and flash configs" button (<img src="images/PhoenixTunerX-FlashConfigButton.png" style="height: 1em" title="It looks like it's downloading something onto a motor">) to save the config.
+2. Go into the **Config** tab and set the Magnet Offset to 0. Use the "Apply and flash configs" button (<img src="../../images/PhoenixTunerX-FlashConfigButton.png" style="height: 1em" title="It looks like it's downloading something onto a motor">) to save the config.
 3. Turn the wheel so that it's aligned forward-backward (don't worry about if it's inverted yet). The shop has a swerve alignment tool; use it if possible.
 4. Go to the **Self Test** tab and click Refresh; this should load a page. Copy the Absolute Position value (only the number), flip the sign (positive to negative and vice versa), and paste it into the Magnet Offset field in the config.
 5. Flash the config. Make sure the offset is correct by refreshing the Self Test and checking that the Absolute Position is now near-zero (within ±0.01 is good).

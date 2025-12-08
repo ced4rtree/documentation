@@ -2,7 +2,8 @@
 
 *When the robot's code is modified during a competition, we back up the new code on an SD card.*
 
-**To re-image the card (before the start of qualifying matches and before the start of playoff matches):**
+## Reimaging the Card
+This should happen before the start of qualifying matches and before the start of playoff matches.
 
 On a Tators laptop:
 
@@ -11,7 +12,9 @@ On a Tators laptop:
     * Browse to the "FRC Images" > "SD Images" directory in the same location as the "roboRIO_ImagingTool" application.
 2. Use **roboRIO Team Number Setter** to set our team number (`2122`) on the SD card. See [https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/roborio-team-number-setter/index.html](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/roborio-team-number-setter/index.html)
 
-**To update the SD card (when code changes have been made):**
+## Updating Code on an SD Card
+
+This should happen **every time** a commit is made to the event branch for that day.
 
 On a mobile phone:
 
