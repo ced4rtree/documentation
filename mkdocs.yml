@@ -1,5 +1,8 @@
 site_name: Tator Tome
 
+plugins:
+  - excalidraw
+
 # theme configuration
 theme:
   logo: images/logo.png
