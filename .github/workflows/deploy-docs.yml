@@ -28,4 +28,5 @@ jobs:
           path: ~/.cache 
           restore-keys: |
             mkdocs-material-
+      - name: Deploy Site to gh-pages Branch
       - run: nix develop --command mkdocs gh-deploy --force
